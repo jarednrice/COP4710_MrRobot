@@ -11,3 +11,5 @@ Using XAMPP for PHP and MYSQL database management.
 -clone the github repo
 
 -rename the folder back to htdocs
+
+look at the XAMPP stuff in the internet DB powerpoint
