@@ -13,3 +13,7 @@ Using XAMPP for PHP and MYSQL database management.
 -rename the folder back to htdocs
 
 look at the XAMPP stuff in the internet DB powerpoint
+
+for moving the database into this folder:
+https://webmasters.stackexchange.com/questions/123485/how-to-use-a-git-repository-to-version-control-a-whole-website-including-databas
+mysqldump -u username -p database_name > sqlfile.sql
