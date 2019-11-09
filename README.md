@@ -2,14 +2,12 @@
 
 Using XAMPP for PHP and MYSQL database management.
 
--empty the contents of the xampp/htdocs folder
+-go to the xampp folder
+
+-delete the htdocs folder inside of it
 
 -Open the Shell from the XAMPP Control Panel
 
--change to the htdocs folder by typing cd c:\xampp\htdocs
+-clone the github repo
 
--type git init to create a local repo
-
--pull from the github repo
-
--set the github repo as the remote repo
+-rename the folder back to htdocs
