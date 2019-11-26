@@ -20,3 +20,5 @@ https://www.youtube.com/watch?v=MBF02LurEHg
 for moving the database into this folder:
 https://webmasters.stackexchange.com/questions/123485/how-to-use-a-git-repository-to-version-control-a-whole-website-including-databas
 mysqldump -u username -p database_name > sqlfile.sql
+
+or just drag and drop it into the htdocs folder
