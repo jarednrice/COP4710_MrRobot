@@ -21,6 +21,22 @@ $resultSet2 = $mysqli->query("SELECT DISTINCT ESRB_Rating FROM video_games");
 	<option value = "mmo">MMO</option>
 	<option value = "adventure">Adventure</option>
 </select>
+<!-- platform menu -->
+<body text = "black">
+	<p>Select a platform:</p>
+	<p>(Hold control to select multiple platforms)</p>
+</body>
+<select name = "platforms" multiple size = 6>
+	<option value = "Xbox One">Xbox One</option>
+	<option value = "Xbox 360">Xbox 360</option>
+	<option value = "PlayStation 4">PlayStation 4</option>
+	<option value = "PlayStation 3">PlayStation 3</option>
+	<option value = "Nintendo Switch">Nintendo Switch</option>
+	<option value = "Wii U">Wii U</option>
+	<option value = "PC">PC</option>
+	<option value = "iOS">iOS</option>
+	<option value = "Android">Android</option>
+</select>
 <body text = "black">
 	<p>Select an ESRB Rating:</p>
 </body>
