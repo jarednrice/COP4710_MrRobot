@@ -14,9 +14,6 @@ Using XAMPP for PHP and MYSQL database management.
 
 look at the XAMPP stuff in the internet DB powerpoint
 
-have to create a user to manage the database:
-https://www.youtube.com/watch?v=MBF02LurEHg
-
 for moving the database into this folder:
 https://webmasters.stackexchange.com/questions/123485/how-to-use-a-git-repository-to-version-control-a-whole-website-including-databas
 mysqldump -u username -p database_name > sqlfile.sql
