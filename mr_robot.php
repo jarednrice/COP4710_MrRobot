@@ -11,7 +11,7 @@ $resultSet2 = $mysqli->query("SELECT DISTINCT ESRB_Rating FROM video_games");
 <body text = "black">
 	<p>Select a genre:</p>
 </body>
-
+<!--genre dropmenu -->
 <select name = "genres">
 <?php
 while($rows = $resultSet->fetch_assoc())
@@ -21,7 +21,7 @@ while($rows = $resultSet->fetch_assoc())
 }
 ?>
 </select>
-
+<!--esrb dropmenu -->
 <select name = "esrb_rating">
 <?php
 while($rows = $resultSet2->fetch_assoc())
