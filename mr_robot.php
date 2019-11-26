@@ -3,10 +3,13 @@
 $mysqli = NEW MySQLi('localhost', 'root', '', 'video_games');
 
 $resultSet = $mysqli->query("SELECT DISTINCT Genre FROM video_games");
-//echo "testing";
 
 ?>
 
+<html>
+<body text = "black">
+	<p>Select a genre:</p>
+</body>
 <select name = "genres">
 <?php
 while($rows = $resultSet->fetch_assoc())
@@ -16,3 +19,4 @@ while($rows = $resultSet->fetch_assoc())
 }
 ?>
 </select>
+</html>
