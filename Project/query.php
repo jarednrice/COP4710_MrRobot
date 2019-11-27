@@ -6,17 +6,16 @@ mysql_select_db('video_games');*/
 /*$sql = "SELECT * FROM video_games";
 $result = mysql_query($sql);*/
 
-$query = $mysqli->query("SELECT * FROM video_games");
 
 if(isset($_POST['genres']))
 	$dropdown1 = $_POST['genres'];
-if(isset($_POST['drugCategory']))
+if(isset($_POST['platforms']))
 	$dropdown2 = $_POST['platforms'];
-if(isset($_POST['drugCategory']))
+if(isset($_POST['esrb_rating']))
 	$dropdown3 = $_POST['esrb_rating'];
 
 
-$query .= " WHERE Genre LIKE = '%$dropdown1%' && Platform LIKE = '%$dropdown2%' && ESRB_Rating  = '$dropdown3'"; 
+$query = $mysqli->query("SELECT * FROM video_games WHERE Genre LIKE '%$dropdown1' && Platform LIKE '%$dropdown2%' && ESRB_Rating LIKE '$dropdown3'");
 
 	$result = '<table border="0" cellpadding="6" cellspacing="6" class="curve">';
     $result .= '<thead>';
@@ -36,7 +35,7 @@ $query .= " WHERE Genre LIKE = '%$dropdown1%' && Platform LIKE = '%$dropdown2%' 
 
 
 
-while($row = mysql_fetch_array($query))
+while($row = $query->fetch_assoc())
 {
 	$result .= '<tr>';
     $result .= '<th><div align="left"><span class="font">'.$row['Title'].'</span></div></th>';
