@@ -50,10 +50,13 @@ while($rows = $resultSet2->fetch_assoc())
 }
 ?>
 </select>
+<!-- search using selected options>
 <!-- find game button -->
 <body>
 	<p></p>
-	<input type = 'submit' name = 'find_games' value = 'Find Games'>
+	<form action = "search.php" method = "POST">
+		<input type = 'submit' name = 'find_games' value = 'Find Games'>
+	</form>
 	<p>Or, find a specific game:</p>
 	<!-- goes to search.php on search -->
 	<form action ="search.php" method = "POST">
