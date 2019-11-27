@@ -19,3 +19,6 @@ https://webmasters.stackexchange.com/questions/123485/how-to-use-a-git-repositor
 mysqldump -u username -p database_name > sqlfile.sql
 
 or just drag and drop it into the htdocs folder
+
+to launch site:
+localhost/Project/mr_robot.php in web browser
