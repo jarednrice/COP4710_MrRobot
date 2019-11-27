@@ -53,8 +53,9 @@ while($rows = $resultSet2->fetch_assoc())
 <!-- find game button -->
 <body>
 	<p></p>
-	<input type = 'submit' name = 'submit' value = 'Find Games'>
+	<input type = 'submit' name = 'find_games' value = 'Find Games'>
 	<p>Or, find a specific game:</p>
+	<!-- goes to search.php on search -->
 	<form action ="search.php" method = "POST">
 		<input type = "text" name = "search" placeholder = "Search">
 		<button type = "submit" name = "submit-search">Find Game</button>
