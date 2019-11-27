@@ -50,4 +50,8 @@ while($rows = $resultSet2->fetch_assoc())
 }
 ?>
 </select>
+<body>
+	<p></p>
+	<input type = 'submit' name = 'submit' value = 'Find Games'>
+</body>
 </html>
