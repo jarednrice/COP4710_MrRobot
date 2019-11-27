@@ -12,8 +12,9 @@ $resultSet2 = $mysqli->query("SELECT DISTINCT ESRB_Rating FROM video_games");
 	<p>Select a genre:</p>
 	<p>(Hold control to select multiple genres)</p>
 </body>
-<!--genre dropmenu --> 
-<select name = "genres" multiple size = 6>
+<!--genre dropmenu -->
+<form action ="query.php" method = "POST"> 
+<select id = "genres" name = "genres" multiple size = 6>
 	<option value = "shooter">Shooter</option>
 	<option value = "survival">Survival</option>
 	<option value = "puzzle">Puzzle</option>
@@ -26,7 +27,7 @@ $resultSet2 = $mysqli->query("SELECT DISTINCT ESRB_Rating FROM video_games");
 	<p>Select a platform:</p>
 	<p>(Hold control to select multiple platforms)</p>
 </body>
-<select name = "platforms" multiple size = 6>
+<select id = "platforms" name = "platforms" multiple size = 6>
 	<option value = "Xbox One">Xbox One</option>
 	<option value = "Xbox 360">Xbox 360</option>
 	<option value = "PlayStation 4">PlayStation 4</option>
@@ -41,7 +42,7 @@ $resultSet2 = $mysqli->query("SELECT DISTINCT ESRB_Rating FROM video_games");
 	<p>Select an ESRB Rating:</p>
 </body>
 <!--esrb dropmenu -->
-<select name = "esrb_rating">
+<select id = "esrb_rating" name = "esrb_rating">
 <?php
 while($rows = $resultSet2->fetch_assoc())
 {
@@ -54,14 +55,12 @@ while($rows = $resultSet2->fetch_assoc())
 <!-- find game button -->
 <body>
 	<p></p>
-	<form action = "search.php" method = "POST">
 		<input type = 'submit' name = 'find_games' value = 'Find Games'>
-	</form>
 	<p>Or, find a specific game:</p>
 	<!-- goes to search.php on search -->
-	<form action ="search.php" method = "POST">
+	<!--<form action ="search.php" method = "POST"> -->
 		<input type = "text" name = "search" placeholder = "Search">
 		<button type = "submit" name = "submit-search">Find Game</button>
-	</form>
+<!--</form> -->
 </body>
 </html>
