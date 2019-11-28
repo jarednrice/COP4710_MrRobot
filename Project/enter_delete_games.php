@@ -23,8 +23,8 @@
 </form>
 <form action = "delete_game.php" method = "POST">
 	<p>Remove a game from the database.</p>
-	<input type = "text" name = "search" placeholder = "Enter a game">
+	<input type = "text" name = "remove-game" placeholder = "Enter a game">
 	<p></p>
-	<input type = "submit" name = "remove-game" value = "Remove this game">
+	<input type = "submit" name = "remove-game-button" value = "Remove this game">
 </form>
 </html>
