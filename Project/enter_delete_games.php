@@ -27,4 +27,8 @@
 	<p></p>
 	<input type = "submit" name = "remove-game-button" value = "Remove this game">
 </form>
+<form action ="mr_robot.php" method = "POST">
+<p></p>
+	<input type = "submit" name = "return-home" value = "Return Home">
+</form>
 </html>
