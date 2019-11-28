@@ -1,5 +1,5 @@
 <html>
-<form action ="" method = "POST">
+<form action ="enter_game.php" method = "POST">
 	<p>Insert a game into the database.</p>
 	<input type = "text" name = "title" placeholder = "Title">
 	<p></p>
@@ -21,7 +21,7 @@
 	<p></p>
 	<input type = "submit" name = "insert-game" value = "Insert this game">
 </form>
-<form action = "" method = "POST">
+<form action = "delete_game.php" method = "POST">
 	<p>Remove a game from the database.</p>
 	<input type = "text" name = "search" placeholder = "Enter a game">
 	<p></p>
