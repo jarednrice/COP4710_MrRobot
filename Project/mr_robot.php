@@ -58,18 +58,27 @@ while($rows = $resultSet2->fetch_assoc())
 ?>
 </select>
 </div>
-<!-- search using selected options>
-<!-- find game button -->
+<!-- search using selected options -->
 <body>
 	<p></p>
 		<div>
+		<!-- find game button -->
 		<input type = 'submit' name = 'find_games' value = 'Find Games'>
 		</div>
 	<p>Or, find a specific game:</p>
-	<!-- goes to search.php on search -->
-	<!--<form action ="search.php" method = "POST"> -->
-		<input type = "text" name = "search" placeholder = "Search">
-		<button type = "submit" name = "submit-search">Find Game</button>
+</form>
+<!-- goes to search.php on search -->
+<form action ="search.php" method = "POST">
+	<input type = "text" name = "search" placeholder = "Search">
+	<button type = "submit" name = "submit-search">Find Game</button>
+</form>
+<!-- goes to page where you insert games into database -->
+<form action ="enter_games.php" method = "POST">
+	<input type = "submit" name = "insert" value = "Add games to database">
+</form>
+<!-- goes to page where you remove games from database -->
+<form action ="delete_games.php" method = "POST">
+	<input type = "submit" name = "remove" value = "Remove games from database">
 </form>
 </div>
 </body>
