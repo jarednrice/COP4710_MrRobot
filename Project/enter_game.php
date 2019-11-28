@@ -19,4 +19,6 @@ if(!mysqli_query($mysqli,$sql)) {
 } else {
     echo 'Data inserted';
 }
+
+$mysqli->close();
 ?>

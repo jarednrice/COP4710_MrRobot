@@ -10,4 +10,6 @@ if(!mysqli_query($mysqli,$sql)) {
 } else {
     echo 'Data removed';
 }
+
+$mysqli->close();
 ?>
