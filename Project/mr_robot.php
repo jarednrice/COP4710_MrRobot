@@ -72,13 +72,9 @@ while($rows = $resultSet2->fetch_assoc())
 	<input type = "text" name = "search" placeholder = "Search">
 	<button type = "submit" name = "submit-search">Find Game</button>
 </form>
-<!-- goes to page where you insert games into database -->
+<!-- goes to page where you remove/enter games-->
 <form action ="enter_delete_games.php" method = "POST">
-	<input type = "submit" name = "insert" value = "Add games to database">
-</form>
-<!-- goes to page where you remove games from database -->
-<form action ="enter_delete_games.php" method = "POST">
-	<input type = "submit" name = "remove" value = "Remove games from database">
+	<input type = "submit" name = "remove" value = "Insert or remove games">
 </form>
 </div>
 </body>
