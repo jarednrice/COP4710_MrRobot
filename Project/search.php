@@ -1,7 +1,7 @@
 <?php include "mr_robot.php";
 
-if(isset($_POST['']))
-	$field1 = $_POST[''];
+if(isset($_POST['search']))
+	$field1 = $_POST['search'];
 
 $query = $mysqli->query("SELECT * FROM video_games WHERE Title = '$field1'");
 
