@@ -73,7 +73,7 @@ while($rows = $resultSet2->fetch_assoc())
 		<input type = "text" name = "search" placeholder = "Search">
 		<button type = "submit" name = "submit-search">Find Game</button>
 </form>
-<form action ="" method = "POST">
+<form action ="search-location.php" method = "POST">
 	<p>Find where a game was made:</p> 
 	<input type = "text" name = "search-location" placeholder = "Search">
 	<input type = "submit" name = "remove" value = "Find where games are made">
