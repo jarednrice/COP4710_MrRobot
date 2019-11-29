@@ -76,5 +76,8 @@ while($rows = $resultSet2->fetch_assoc())
 <form action ="update_game.php" method = "POST">
 		<input type = "submit" name = "update" value = "Update a game">
 </form>
+<form action ="enter_delete_games.php" method = "POST">
+	<input type = "submit" name = "remove" value = "Insert or remove games">
+</form>
 </body>
 </html>

@@ -20,7 +20,7 @@ if(isset($_POST['price']))
 if(isset($_POST['genre']))
 	$field9 = $_POST['genre'];
 
-$update = " UPDATE video_games SET Publisher_Name = '$field2' && Developer_Name = '$field3' && Reviews = '$field4' && ESRB_Rating = '$field5' && Platform = '$field6' && Release_Date = '$field7' && Price = '$field8' && Genre = '$field9' WHERE Title = '$field1'";
+$update = " UPDATE video_games SET Publisher_Name = '$field2', Developer_Name = '$field3', Reviews = '$field4', ESRB_Rating = '$field5', Platform = '$field6', Release_Date = '$field7', Price = '$field8', Genre = '$field9' WHERE Title = '$field1'";
 
 if (mysqli_query($mysqli, $update)) {
       echo "Record updated successfully";
