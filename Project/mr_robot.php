@@ -89,5 +89,9 @@ while($rows = $resultSet2->fetch_assoc())
 <form action ="enter_delete_games.php" method = "POST">
 	<input type = "submit" name = "remove" value = "Insert or remove games">
 </form>
+<form action = "recommended.php" method = "POST">
+	<input type = "submit" name = "rec" value = "Recommend me a game">
+</form>
+</form>
 </body>
 </html>

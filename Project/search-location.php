@@ -10,9 +10,9 @@ $q2 = $mysqli->query("SELECT Game.Title, publishers.P_Location, developers.D_Loc
 	$result = '<table border="0" cellpadding="6" cellspacing="6" class="curve">';
     	$result .= '<thead>';
     	$result .= '<tr>';
-    	$result .= '<th> <div align="right"><span class="font">Title</span></div></th>';
-    	$result .= '<th> <div align="right"><span class="font">Publisher Location</span></div></th>';
-	$result .= '<th> <div align="right"><span class="font">Developer Location</span></div></th>';
+    	$result .= '<th> <div align="left"><span class="font">Title</span></div></th>';
+    	$result .= '<th> <div align="left"><span class="font">Publisher Location</span></div></th>';
+	$result .= '<th> <div align="left"><span class="font">Developer Location</span></div></th>';
 	$result .= '</tr>';
 	$result .= '</thead>';
 	
@@ -20,7 +20,7 @@ while($row = $q2->fetch_assoc())
 {
     $result .= '<tr>';
     $result .= '<th><div align="left"><span class="font">'.$row['Title'].'</span></div></th>';
-    $result .= '<td><div align="left"><span class="font">'.$row['P_Location'].'</span></div></td>'; 
+    $result .= '<th><div align="left"><span class="font">'.$row['P_Location'].'</span></div></th>'; 
     $result .= '<th><div align="left"><span class="font">'.$row['D_Location'].'</span></div></th>'; 
     $result .= '</tr>';
 }

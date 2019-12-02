@@ -20,15 +20,15 @@ $query = $mysqli->query("SELECT * FROM video_games WHERE Genre LIKE '%$dropdown1
 	$result = '<table border="0" cellpadding="6" cellspacing="6" class="curve">';
     $result .= '<thead>';
     $result .= '<tr>';
-    $result .= '<th> <div align="right"><span class="font">Title</span></div></th>';
+    $result .= '<th> <div align="left"><span class="font">Title</span></div></th>';
     $result .= '<th> <div align="right"><span class="font">Publisher Name</span></div></th>';
-	$result .= '<th> <div align="right"><span class="font">Developer Name</span></div></th>';
+	$result .= '<th> <div align="left"><span class="font">Developer Name</span></div></th>';
 	$result .= '<th> <div align="right"><span class="font">Reviews</span></div></th>';
 	$result .= '<th> <div align="right"><span class="font">ESRB Rating</span></div></th>';
-	$result .= '<th> <div align="right"><span class="font">Platform</span></div></th>';
+	$result .= '<th> <div align="left"><span class="font">Platform</span></div></th>';
 	$result .= '<th> <div align="right"><span class="font">Release Date</span></div></th>';
 	$result .= '<th> <div align="right"><span class="font">Price</span></div></th>';
-	$result .= '<th> <div align="right"><span class="font">Genre</span></div></th>';
+	$result .= '<th> <div align="left"><span class="font">Genre</span></div></th>';
     $result .= '</tr>';
     $result .= '</thead>';
 
@@ -39,7 +39,7 @@ while($row = $query->fetch_assoc())
 {
 	$result .= '<tr>';
     $result .= '<th><div align="left"><span class="font">'.$row['Title'].'</span></div></th>';
-    $result .= '<td><div align="left"><span class="font">'.$row['Publisher_Name'].'</span></div></td>'; 
+    $result .= '<th><div align="left"><span class="font">'.$row['Publisher_Name'].'</span></div></th>'; 
     $result .= '<th><div align="left"><span class="font">'.$row['Developer_Name'].'</span></div></th>'; 
     $result .= '<th><div align="left"><span class="font">'.$row['Reviews'].'</span></div></th>';
     $result .= '<th><div align="left"><span class="font">'.$row['ESRB_Rating'].'</span></div></th>';
